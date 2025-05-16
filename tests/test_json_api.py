@@ -35,3 +35,4 @@ def test_get_post_by_id(json_placeholder_api, post_id):
     response = json_placeholder_api.get_post_by_id(post_id)
     assert response.status_code == http.HTTPStatus.OK
     Post(**response.json())
+#
